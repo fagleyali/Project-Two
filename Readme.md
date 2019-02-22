@@ -1,7 +1,7 @@
 # Project-Two Title
     Primarily I am calling this project as 
-    # Sonargaon 
-    ####### A golden village
+# Sonargaon 
+####### A golden village
 
 # Screenshots
 ![Wireframe-Page1](public/images/Page1.JPG)
