@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+<h1>This is landing page</h1>
+<%=message%>
+<% destinations.forEach(function(d){%>
+    <h4>
+            <%= d.name %>
+    </h4>
+<div class="col col-xs-2">
+        <a href="/destinations/<%=d._id%>">
+            <img src="<%=d.imageUrl%>" alt="" >
+        </a>
+    
+</div>
+
+<%})%>
+
+<%- include('../partials/footer')%>

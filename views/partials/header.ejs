@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+        <nav class="navbar navbar-default">
+                <!-- <img src="/images/camera.svg"> -->
+                <span id="logo">Sonargaon</span><span id="subBanner">the golden village</span>
+                <ul class="right">
+                    <li>
+                    <% if (user) { %>
+                      
+                      <a href="/logout"><i class="material-icons left"><span class=""><%= user.name %></span></i>Log Out</a>
+                    <% } else { %>
+                      <a href="/auth/google"><i class="material-icons left"></i>Login with Google</a>
+                    <% } %>
+                    </li>
+                  </ul>
+                 
+                
+                <a href="/destinations/hotels" <%- title === 'Add Hotel' ? 'class="active"' : '' %>>ADD HOTEL</a>
+                <a href="/destinations/new" <%- title === 'Add Destination' ? 'class="active"' : '' %>>ADD DESTINATION</a>
+                <a href="/destinations" <%- title === 'All Destinations' ? 'class="active"' : '' %>>ALL DESTINATIONS</a>
+              </nav>
+              <main>
+                <h1><%= title %></h1>
+    
