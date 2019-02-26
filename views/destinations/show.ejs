@@ -1,23 +1,74 @@
 <%- include('../partials/header') %>
 
-
-<table class="table table-inverse">
-        <tbody>
-          <tr>
-            <td>Destination</td>
-            <td><%= destination.name %></td>
-         </tr>
-         <tr>
-            <td>Location</td>
-            <td><%= destination.location %></td>
-        </tr>
+<p hidden=true id="user"><%=user%></p>
+<form id="form1" method="POST" action="/destinations/<%= destination._id %>?_method=PUT">
+  <table class="table table-inverse">
+      <tbody>
         <tr>
-            <td>Image URL</td>
-            <td><img src="<%= destination.imageUrl %>" alt=""></td>
-            
-        </tr>
-       </tbody>
-      </table>
+          <td>Destination</td>
+          <td  ><input form="form1"name="name" value="<%= destination.name %>" disabled></td>
+          
+       </tr>
+       <tr>
+          <td>Location</td>
+          <td ><input form="form1"name="location" value="<%= destination.location %>" disabled  ></td>
+          
+      </tr>
+      <tr>
+          <td>Image</td>
+          <td  ><img src="<%= destination.imageUrl %>" alt=""></td>
+          
+          
+      </tr>
+      <tr>
+          <td class="hidden">Image URL</td>
+          <td class="hidden"  ><input form="form1" name="imageUrl" value="<%= destination.imageUrl %>" disabled  ></td>
+      </tr>
+     </tbody>
+    </table>
+
+    <input class="hidden" form="form1" type="submit" name="edit" value="Save Changes" id="">
+    
+      
+    </form>
+
+
+<button id="edit">Edit</button>
+
+<style>
+  .hidden {
+    visibility: hidden;
+    
+  }
+</style>
+
+<script>
+  const hiddenItems = document.querySelectorAll('.hidden');
+  const valueItems = document.querySelectorAll('input');
+  
+  document.querySelector('#edit').addEventListener('click', (e) => {
+     if(document.getElementById('user').textContent!==""){
+      hiddenItems.forEach(elm => elm.classList.remove('hidden'));
+      valueItems.forEach(elm => elm.removeAttribute('disabled'));
+     }
+      
+      // valueItems.forEach(elm => elm.focus());
+      // window.getSelection().removeAllRanges();
+
+  })
+
+//   function edit(el) {
+//   el.childNodes[0].removeAttribute("disabled");
+//   el.childNodes[0].focus();
+//   window.getSelection().removeAllRanges();
+// }
+// function disable(el) {
+//   el.setAttribute("disabled","");
+// }
+
+</script> 
+
+
     
 
 

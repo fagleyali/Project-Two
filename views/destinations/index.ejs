@@ -1,18 +1,30 @@
 <%- include('../partials/header') %>
+<div class="container">
+        <header class="jumbotron">
+                <h1>Welcome to travel destinations of Bangladesh</h1>
+                <p>See the travel and tourism spots of Bangladesh</p>
+            
+            </header>
+            <!-- <%=message%> -->
+            <% destinations.forEach(function(d){%>
+               
+        <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                            <a href="/destinations/<%=d._id%>">
+                                <img src="<%=d.imageUrl%>" alt="" width="400" height="250"  >
+                            </a>
 
-<h1>This is landing page</h1>
-<%=message%>
-<% destinations.forEach(function(d){%>
-    <h4>
-            <%= d.name %>
-    </h4>
-<div class="col col-xs-2">
-        <a href="/destinations/<%=d._id%>">
-            <img src="<%=d.imageUrl%>" alt="" >
-        </a>
-    
+                    </div>
+                        
+                    
+                </div>
+                
+                <%})%>
+        </div>
+            
+            
+
 </div>
-
-<%})%>
 
 <%- include('../partials/footer')%>

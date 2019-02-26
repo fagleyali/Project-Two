@@ -5,7 +5,9 @@ module.exports={
     index,
     new: newItem,
     create,
-    show
+    show,
+    edit,
+    update
 };
 let message = null;
 function index(req,res,next){
@@ -60,3 +62,20 @@ function create(req,res){
         }
        
     };
+
+    function edit (req,res){
+        
+    }
+
+    
+
+    function update(req,res){
+        if (req.user){
+            Destination.findByIdAndUpdate(req.params.id,req.body, {new: true}, function(err, updatedDestination){
+                if(err) res.redirect('/destinations');
+                console.log(updatedDestination)
+                res.redirect('/destinations/' + req.params.id);
+            })
+        }
+        
+    }
