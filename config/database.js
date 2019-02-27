@@ -1,6 +1,8 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/destinations',
+const connectionString = "mongodb+srv://heroku:Arizona@2019@cluster0-eevic.mongodb.net/wdisonargaon?retryWrites=true"
+
+mongoose.connect(connectionString,
             {useNewUrlParser:true}
     );
 
