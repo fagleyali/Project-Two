@@ -5,26 +5,26 @@
                 <p>See the travel and tourism spots of Bangladesh</p>
             
             </header>
-            <!-- <%=message%> -->
-            <% destinations.forEach(function(d){%>
-               
         <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="thumbnail">
+                        <% destinations.forEach(function(d,i){%>        
+                 
+                        <div class="col-md-4">
+                          <div class="thumbnail">
                             <a href="/destinations/<%=d._id%>">
-                                <img src="<%=d.imageUrl%>" alt="" width="400" height="250"  >
+                              <img src="<%=d.imageUrl%>" alt="<%=d.name%>" style="width:100%">
+                              <div class="caption">
+                                <p>Lorem ipsum...</p>
+                              </div>
                             </a>
-
-                    </div>
-                        
-                    
-                </div>
-                
-                <%})%>
+                          </div>
+                        </div>
+        
+        <% if ((i+1) % 3 === 0 ){%>
         </div>
-            
-            
-
-</div>
+        <div class="row">
+        <%}%>
+        <%})%>
+        </div>
+ </div>
 
 <%- include('../partials/footer')%>

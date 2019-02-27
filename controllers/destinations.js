@@ -27,6 +27,8 @@ function index(req,res,next){
 }
 
 function show(req, res){
+
+    console.log(req.user);
     Destination.findById(req.params.id,function(err,destination){
         if(err) res.redirect('/destinations');
         res.render('destinations/show',{

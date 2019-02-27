@@ -2,7 +2,7 @@
 
 <p hidden=true id="user"><%=user%></p>
 <form id="form1" method="POST" action="/destinations/<%= destination._id %>?_method=PUT">
-  <table class="table table-inverse">
+  <!-- <table class="table table-inverse">
       <tbody>
         <tr>
           <td>Destination</td>
@@ -25,7 +25,32 @@
           <td class="hidden"  ><input form="form1" name="imageUrl" value="<%= destination.imageUrl %>" disabled  ></td>
       </tr>
      </tbody>
-    </table>
+    </table> -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          col 1 row 1
+
+        </div>
+        <div class="col">
+          col 2 row 1
+        </div>
+
+      </div>
+
+      <div class="row">
+          <div class="col-2">
+            col 1 row 2
+  
+          </div>
+          <div class="col-4">
+            col 2 row 2
+          </div>
+  
+        </div>
+
+    </div>
 
     <input class="hidden" form="form1" type="submit" name="edit" value="Save Changes" id="">
     
