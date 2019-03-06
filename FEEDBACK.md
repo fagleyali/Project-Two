@@ -12,7 +12,7 @@ Is deployed to Heroku          |  X   |    |
 OPTIONAL - The app consumes a third-party API |     |  X  |
 OPTIONAL - A data resource is accessible on the server via an API (returns JSON)   |     | X   |
 
-#### Feedback:  _____________________________________________________<br>__________________________________________________________________<br>_______________________________________________________________
+#### Feedback:  
 
 GitHub / Readme                                 | Yes | No |
 :--                                    |:--  |:-- |
@@ -59,6 +59,6 @@ Bonus: Instance and/or static methods used | | X |
 Bonus: MongooseJS middleware hooks (pre/post save, etc) used | | X  |
 
 
-Additional Comments, Suggestions, Feedback:
 
-#### Feedback:  _____________________________________________________<br>__________________________________________________________________<br>_______________________________________________________________
+
+#### Additional Comments, Suggestions, Feedback::  
