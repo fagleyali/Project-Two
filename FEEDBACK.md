@@ -56,7 +56,7 @@ Validations (including `enums`) used as needed  |     |  X   |
 Default values used as needed  |     |  X   |
 Bonus: Virtual properties used  |     |   X  |
 Bonus: Instance and/or static methods used | X |  |
-Bonus: MongooseJS middleware hooks (pre/post save, etc) used | | X  |
+Bonus: MongooseJS middleware hooks (pre/post save, etc) used | X |  |
 
 
 
