@@ -61,4 +61,17 @@ Bonus: MongooseJS middleware hooks (pre/post save, etc) used | | X  |
 
 
 
-#### Additional Comments, Suggestions, Feedback::  
+#### Additional Comments, Suggestions, Feedback:
+Excellent work, Ali!! You did an amazing job on this project!
+
+I appreciate you going above and beyond during Unit 2 as well! Congratulations on successfully meeting all of the technical requirements for this project! Your dedication and patience to your learning is truly inspirational.
+
+In regard to specific technical feedback, please check out your individual files. I've placed multiple pieces of feedback comments throughout your project to point out areas of opportunity for you to improve your skills.
+
+Considering everything you've had to learn and your time and experience using it, you did amazing! However, a couple things I want to point out are to make sure to include your `.env` file in your `.gitignore`. This is extremely important because if you expose your API keys to github, you run the risk of someone stealing and misusing them.
+
+
+Another thing I wanted to point point out was commented out code, always be sure to remove all commented out code before you make your final push to production. There are cases when you want to have comments in your code, but that's usually for the purposes of providing documentation.
+
+All in all, excellent work in achieving success for this project!!
+

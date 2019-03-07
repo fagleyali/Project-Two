@@ -1,5 +1,6 @@
 var Destination = require('../models/destinations'); 
 var User = require('../models/users')
+// Your User model is required but never used
 
 module.exports={
     index,
