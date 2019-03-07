@@ -27,3 +27,6 @@ router.get('/logout',function(req,res){
 })
 
 module.exports = router;
+
+
+// Excellent work with your auth routes
